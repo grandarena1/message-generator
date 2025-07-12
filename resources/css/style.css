@@ -99,5 +99,12 @@ header h1 {
 
 /* Footer styling */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #111317;
+}
+
+.footer-text {
+    color: white;
 }
