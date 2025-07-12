@@ -166,10 +166,6 @@ i {
     }
 
     .message {
-        font-size: 1.65rem;
+        font-size: 1.6rem;
     }
-}
-
-@media only screen and (max-width: 1600px) {
-
 }
