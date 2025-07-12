@@ -11,22 +11,22 @@ const messageFirstSection = [
   "Daily reminder: "];
 
 const messageSecondSection = [
-  "you’re stronger than you think ",
-  "it's okay to take a break ",
-  "your worth isn't tied to productivity ",
-  "small steps still move you forward ",
-  "resting is productive too ",
-  "you’ve overcome so much already ",
-  "you’re not behind — your pace is valid ",
-  "you don’t have to have it all figured out ",
-  "you’re allowed to outgrow people and places ",
-  "healing isn’t linear ",
-  "you bring value just by existing ",
-  "progress takes time — don’t rush it ",
-  "not every day has to be amazing to be meaningful ",
-  "you are more than your worst moments ",
-  "you’re learning, not failing ",
-  "everything you feel is valid "];
+  "you’re stronger than you think. ",
+  "it's okay to take a break. ",
+  "your worth isn't tied to productivity. ",
+  "small steps still move you forward. ",
+  "resting is productive too. ",
+  "you’ve overcome so much already. ",
+  "you’re not behind — your pace is valid. ",
+  "you don’t have to have it all figured out. ",
+  "you’re allowed to outgrow people and places. ",
+  "healing isn’t linear. ",
+  "you bring value just by existing. ",
+  "progress takes time — don’t rush it. ",
+  "not every day has to be amazing to be meaningful. ",
+  "you are more than your worst moments. ",
+  "you’re learning, not failing. ",
+  "everything you feel is valid. "];
 
 const messageThirdSection = [
   "Keep going.",
@@ -39,3 +39,17 @@ const messageThirdSection = [
   "Breathe. Reset. Move forward.",
   "You're not alone.",
   "Shine on."];
+
+  const messageElement = document.getElementsByClassName("message")[0];
+
+  function GenerateRandomDataIndexes() {
+    let introIndex = Math.floor(Math.random() * messageFirstSection.length);
+    let secondIndex = Math.floor(Math.random() * messageSecondSection.length);
+    let finalIndex = Math.floor(Math.random() * messageThirdSection.length);
+    
+    SetGeneratedMessage(introIndex, secondIndex, finalIndex);
+  }
+
+  function SetGeneratedMessage(first, second, third) {
+    messageElement.textContent = messageFirstSection[first] + messageSecondSection[second] + messageThirdSection[third];
+  }
