@@ -155,6 +155,10 @@ i {
         padding: 0 15px;
     }
 
+    .button-container {
+        align-items: center;
+    }
+
     .message {
         font-size: 1.65rem;
     }
@@ -163,6 +167,10 @@ i {
 @media only screen and (max-width: 1024px) {
     .message-container {
         padding: 0 15px;
+    }
+
+    .button-container {
+        align-items: center;
     }
 
     .message {
