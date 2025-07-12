@@ -1,3 +1,5 @@
+/* Univeral styles */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,6 +8,7 @@
 
 html {
     font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
 .container {
@@ -17,6 +20,8 @@ html {
     background-color: antiquewhite;
 }
 
+/* Header styling */
+
 header {
     display: flex;
     justify-content: center;
@@ -24,10 +29,50 @@ header {
 }
 
 header h1 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     letter-spacing: 1.15px;
     font-size: 2rem;
     background-color: rgb(71, 67, 116);
     padding: 15px;
     color: rgb(255, 255, 255);
+}
+
+/* Message styling */
+
+.message-generator-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.message-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+/* Button styling */
+
+.generate-button-container {
+    padding-top: 80px;
+}
+
+#generate-btn {
+    padding: 20px 80px;
+    background-color: rgb(71, 67, 116);
+    border: none;
+    color: white;
+    letter-spacing: 1.15px;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    background-color: rgb(221, 130, 217);
 }
