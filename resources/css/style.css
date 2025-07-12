@@ -124,3 +124,22 @@ i {
     color: rgb(255, 255, 255);
     padding-bottom: 30px;
 }
+
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        text-align: center;
+    }
+
+    .message-container {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .message {
+        font-size: 1.65rem;
+        text-align: center;
+    }
+}
