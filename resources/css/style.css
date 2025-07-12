@@ -30,6 +30,11 @@ html {
     background-color: #ffffff;
 }
 
+/* General styling */
+.bold {
+    font-weight: bold;
+}
+
 /* Header styling */
 
 header {
