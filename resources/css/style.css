@@ -22,12 +22,18 @@ html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
+body {
+    height: 1110px;
+    width: 100vw;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 4fr 1fr;
-    height: 1110px;
+    /*height: 1110px;*/
     background-color: #ffffff;
+    height: 100%;
 }
 
 /* General styling */
@@ -51,6 +57,7 @@ header h1 {
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-family: Lato-Black;
+    text-align: center;
 }
 
 /* Message styling */
@@ -69,6 +76,8 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    padding: 0 10px;
+    text-align: center;
 }
 
 .message {
@@ -128,18 +137,39 @@ i {
 /* Media queries */
 
 @media only screen and (max-width: 480px) {
-    header h1 {
-        text-align: center;
+    .message {
+        font-size: 1.65rem;
     }
 
+    .button-container {
+        align-items: center;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .message-container {
-        display: flex;
-        justify-content: center;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .message {
         font-size: 1.65rem;
-        text-align: center;
     }
+}
+
+@media only screen and (max-width: 1024px) {
+    .message-container {
+        padding: 0 15px;
+    }
+
+    .message {
+        font-size: 1.65rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+
 }
