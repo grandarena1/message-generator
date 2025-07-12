@@ -4,6 +4,7 @@ An application that generates a random message on the click of a button. The mes
 
 When the 'generate' button is clicked, a random index is generated for each array which corresponds to a random element in each array. These elements are then joined together to form the final quote/phrase.
 
+
 ## ℹ️ Overview
 This project was created as part of the curriculum for Codecademy. The project objectives were as follows: 
 
@@ -16,6 +17,7 @@ This project was created as part of the curriculum for Codecademy. The project o
 * HTML
 * CSS
 * JavaScript
+  
 
 ## ✅ Project Tasks
 This project had a total of 8 tasks to complete in order to fulfill the list of requirements provided.
@@ -28,6 +30,7 @@ This project had a total of 8 tasks to complete in order to fulfill the list of 
 + [x] Create the message
 + [x] Put the program together
 + [x] Add own additions
+      
 
 ## ⬇️ Installation Instructions
 Good news! This works straight out of the box. It can be accessed here:
