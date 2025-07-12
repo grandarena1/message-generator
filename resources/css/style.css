@@ -100,6 +100,11 @@ header h1 {
 
 #generate-btn:hover {
     background-color: rgb(221, 130, 217);
+    font-size: 1.15rem;
+}
+
+#generate-btn:active {
+    background-color: rgb(130, 159, 221);
 }
 
 /* Footer styling */
