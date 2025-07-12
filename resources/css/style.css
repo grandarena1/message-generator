@@ -4,6 +4,11 @@
     src: url("../fonts/Lato/Lato-Black.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Lato-Thin";
+    src: url("../fonts/Lato/Lato-Thin.ttf") format("truetype");
+}
+
 /* Univeral styles */
 
 * {
@@ -63,7 +68,7 @@ header h1 {
 
 .message {
     font-size: 1.75rem;
-    font-family:monospace;
+    font-family: Lato-Thin, monospace;
 }
 
 /* Button styling */
@@ -85,6 +90,7 @@ header h1 {
     cursor: pointer;
     border: none;
     font-weight: bold;
+    font-family: Lato-Black;
 }
 
 #generate-btn:hover {
